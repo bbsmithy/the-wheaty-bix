@@ -1,0 +1,12 @@
+#terminal-code {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 400px;
+  resize: both;
+  overflow: auto;
+  height: 50%;
+  opacity: 0.8;
+  background-color: black;
+  color: green;
+}

@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <script src="matter.min.js"></script>
+
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      #terminal-code {
+        color: rgb(0, 231, 0);
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        font-size: 17px;
+        font-family: monospace;
+        opacity: 0.7;
+        resize: none;
+      }
+      #terminal-container {
+        position: absolute;
+        right: 20px;
+        bottom: 40px;
+        width: 400px;
+        height: 50%;
+        padding-top: 10px;
+      }
+      #terminal-container-footer {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="terminal-container">
+      <textarea id="terminal-code">
+Rocket.launch(0.001, (speed, position, angle) => {
+  var distance =Navigation.getDistance(Planets.balor)
+  console.log(distance)
+})
+      </textarea>
+      <div id="terminal-container-footer">
+        <button id="run-btn">Run</button>
+      </div>
+    </div>
+    <embed
+      name="GoodEnough"
+      src="./Moon Garden.mp3"
+      loop="true"
+      hidden="true"
+      autostart="true"
+    />
+  </body>
+  <script src="util.js"></script>
+  <script src="game.js"></script>
+  <script src="code_editor.js"></script>
+</html>
